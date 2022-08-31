@@ -1,0 +1,2303 @@
+{
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "sendstatus": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "empid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "payment_entry": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "supplierid_remark": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "creatorid_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "total_presettlestatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ap_prepay_billno": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_city_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ioamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_district_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settingterm_monthcheckday": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_city_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "alldebt": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "supplierid_addr": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currencyid_amtprecision": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currencyid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "basecurrency_exctype": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_city_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "inputcoefficient_option": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "empid_mobile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_province_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "deptid_fcomment": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "multiple_pay_info": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "realiostatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "basecurrency_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "basecurrency_enable": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "basecurrency_convertmode": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "billtypeid_modeltype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billsource": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deptid_isleaf": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "attachments": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "supplierid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "total_auditpreamount_for": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "empid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifierid_phone": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "total_deposit": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bill_deal_amount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wf_previoushandler": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_country_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "recevice_delivery": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payment_flag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "settingterm_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createtime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "basecurrency_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "basecurrency_format": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currencyid_format": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sum_whole_amt_bef_dis": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "modifierid_username": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billtypeid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "basecurrency_sign": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_bankaccount": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deposit_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_province_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wf_currentnode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifierid_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "attachments_url": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "basecurrency_isshowsign": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "fee_entity": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "alter_version": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost_fee": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settingterm_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_pinyin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "audittime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_city_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "settingterm_type": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "billclosestate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deptid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settingterm_enable": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_district_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "whole_discount_flag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "currencyid_convertmode": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "supplierid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "supplierid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unioamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_province_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settingterm_standdays": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "custom_field__1__2bpkujbmqnoxie": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_bank": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifytime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_district_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "exchangerate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "total_deposit_for": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wf_progress": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "empid_email": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_address": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "creatorid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "auditorid_username": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifierid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deptid_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalsettleamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settingterm_monthpayday": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currencyid_sign": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "basecurrency_amtprecision": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "supplierid_fullpinyin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "duedate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_deduct": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "creatorid_username": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_accountopenaddr": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "empid_birthday": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_country_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_district_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_linkman": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "printcount": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "auditorid_phone": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "empid_gender": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currencyid_exctype": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_country_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost_fee_entity": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "feeRecords": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "totalunsettleamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settlestatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_country_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "creatorid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "total_presettleamount_for": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "deptid_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "lastdebt": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost_fee_for": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "deptid_enable": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "creatorid_phone": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "transtype": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "material_entity": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "properties": {
+          "materialid_seccoefficient": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "baseunit_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "taxamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcentryid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "discount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_net_weight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "deliverydate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hcloseamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "taxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_refistrationnumber": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "entryclosesmark": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "returnbaseqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_iskfperiod": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "materialid_ispurchase": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "proregno": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "unittype": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_wide": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "baseunit_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "auxpropname": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "aux_price": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "mullabel": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "number": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "id": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "material_remark_export": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "entryunioamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "taxamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inputcoefficient": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_costprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_barcode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "baseunit_precision": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "expreturnamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ref_retail_price": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "real_unin_qty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_prolicense": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_issale": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "batchno": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "returnqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_bomprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_maxinventoryqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "totalnetweight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_isasstattr": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "srcseq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inbaseqty2": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_secinventoryqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "src_billdate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "auxcoefficient": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inv_baseqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "entrystatus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "returnamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "baseunit_precisionaccount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "disamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "actnontaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_tradeprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "auxqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "caculatecoefficient": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "seq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "custom_entity_field__data": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_bindsupplier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "actnontaxamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "baseqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "regain_price": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "acttaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "auxunittype": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cess": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_gross_weight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit_precisionaccount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "picture": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_entrust": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "materialid_high": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "is_free": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "settleamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "disprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "entryrealiostatus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_costmethod": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inbaseqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "indeffloatqty2": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "real_in_baseqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "fee": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "aux_taxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "expreturnamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_isbatch": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "materialid_maxpurchaseprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "net_weight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "entryioamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "inqty2": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "uninqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_kfperiodtype": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_old_row": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "hcloseamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_istaxfree": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "gross_weight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "barcode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hclose_qty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_length": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit_conversiontype": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "closestate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "auxprop_sku_export": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "package": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "returndeffloatqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "allamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "lastindate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "inv_qty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_stockup_day": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "proplace": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "entrysettlestatus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "returnqty2": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcbillno": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "unit_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "volume": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "baseunit_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "material_model_export": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srcbillno_hyperlink": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "qty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "coefficient": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "billdisdistribution": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_helpcode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "returnbaseqty2": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "entryiostatus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "deffloatqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "settleamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_kfperiod": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_purchaseprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "totalvolume": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_taxrate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "disrate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "real_in_qty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "base_taxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_fixunitcount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcinterid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_retailprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_leadtime": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "base_price": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "prolicense": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_checktype": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "entryunioamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "material_category_export": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "distaxamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "returndeffloatqty2": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit_precision": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "amount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "totalgrossweight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "predisamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "indeffloatqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "entryioamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "allamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "billdisbeforeamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_isserial": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "materialid_ismulti_unit": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "materialid_volume": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "materialid_minsalesprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "baseunit_conversiontype": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "returnamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "comment": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "material_band_export": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_producingpace": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_mininventoryqty": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "conversionrate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_remark": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "materialid_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "dispatcher_province_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currencyid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_phone": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "creatorid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_province_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "mulbilllabel": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "billdate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currencyid_enable": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ioamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wf_tasktype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billno": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bill_dis_amount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "empid_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_linkman": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_info": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "edit_pay_amt": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "enabledirectional": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "totalamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_province_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "total_auditpreamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_country_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_province_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "iostatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billtypeid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billtypeid_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_district_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "basecurrency_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "empid_hiredate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_isentrust": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "modifierid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "diffamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "auditorid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalsettleamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "supplierid_creditlimit": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "depositstatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unioamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_province_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "appid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_country_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currencyid_priceprecision": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_city_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alter_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deptid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_phone": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_district_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_country_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currencyid_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalunsettleamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "basecurrency_priceprecision": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settingterm_beforedays": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_city_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "dispatcher_address": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currencyid_isshowsign": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "supplierid_taxpayerno": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "total_presettleamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "custom_field__data": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billstatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "auditorid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alter_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_country_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "auditorid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "failurereason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "basecurrency_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "outsidepkid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supplierid_enable": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_city_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "settingterm_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "remark": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_district_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "contact_district_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dispatcher_city_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "deposit_arapbill_info": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bill_dis_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "modifierid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "empid_wechat": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isbatchchangerows": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "currencyid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost_fee_detail": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ap_prepay_billid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "empid_enable": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "alter_tag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "auditorid_masterid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  }
+}

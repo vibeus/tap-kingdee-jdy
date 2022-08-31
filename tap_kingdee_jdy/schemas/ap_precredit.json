@@ -1,0 +1,785 @@
+{
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "srccurrency_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalservicefee": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "accountchecktime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "auditdate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalunsettleamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "srccurrency_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currentbalance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "curtotalsettleamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wf_currentnode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billtype_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dept_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalunsettleamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "attachments_url": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "currency_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalunsettleamountfor1": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalrealamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "rpbillno_view": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "orderbillid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totaldiscountamount_show": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalunsettleamount1": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currencyfor_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "selbillinfoentry": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "properties": {
+          "srcduedate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "deposit_rate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcentryid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcbillcomment": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srccomment": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srcbilldate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srcbillamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcbilltypeid_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srcbillexchangerate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcbilltypeid_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srcbillno": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srcbilltypeid_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "srcbillcurrencyid_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "totaleditpayamtfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcbillamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcinterid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cursettleamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "depositstatus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cursettleamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "seq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcbillcurrencyid_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "srcbillcurrencyid_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "totaleditpayamt": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "billsettlestatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "custom_field__data": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billstatus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billtype_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalbalanceamountmemo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "itemclass_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "creator_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "billdate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "itemclass_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "itemclass_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currencyfor_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "accountcheck": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "wf_tasktype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billno": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billsource": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "payfromtoentry": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "properties": {
+          "paytype_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "amount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "servicefee": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unsettleamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "settlestatus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "settleaccount_number": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "servicefeefor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unsettleamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "settleaccount_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "settleamountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "settleaccount_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "comment": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "transnumber": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "paytype_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "currencyid": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "number": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "id": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "amountfor": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "settleamount": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "seq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "custom_entity_field__data": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "modifier_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attachments": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "modifytime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "exchangerate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "emp_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "emp_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "remark": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalservicefeefor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "exchangerateamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wf_progress": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "enabledirectional": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "totaldiscountamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totalamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "wf_previoushandler": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "curtotalsettleamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ismulticurrency": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "modifier_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalrealamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "payfromtotype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "creator_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createtime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currency_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currencyfor_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "servicefeebillno_view": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dept_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "billtype_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalsettleamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "srccurrency_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "totalsettleamount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "totaldiscountamountfor": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "modifier_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "creator_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dept_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currency_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "servicefeebillid": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "printcount": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "emp_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  }
+}
