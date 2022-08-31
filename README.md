@@ -1,4 +1,4 @@
-# tap-kingdee
+# tap-kingdee-jdy
 
 This is a [Singer][1] tap that produces JSON-formatted data following the [Singer spec][2].
 
@@ -6,7 +6,11 @@ This tap:
 
 - Pulls raw data from [Kingdee API][3]
 - Extracts the following resources:
-  - 
+  - 采购订单列表/详情: /pur/pur_order_list, /pur/pur_order_detail
+  - 采购入库单列表/详情: /pur/pur_inboundr_list, /pur/pur_inbound_detail
+  - 付款单列表/详情: /arap/ap_creditr_list, /arap/ap_credit_detail
+  - 预付款单列表/详情: /arap/ap_precreditr_list, /arap/ap_precredit_detail
+
 - Outputs the schema for each resource
 - Incrementally pulls data based on the input state
 
@@ -21,34 +25,35 @@ pip install .
 2. Create a [config file][6] ~/config.json with [Amazon Seller Partner API credentials][7].
 3. Discover catalog:
 ```bash
-tap-referralcandy -c config.json -d > catalog.json
+tap-kingdee-jdy -c config.json -d > catalog.json
 ```
-4. Select `rferrals` stream in the generated `catalog.json` 
+4. Select `pur_inbound` stream in the generated `catalog.json` 
     ```
     ...
-    "stream": "rferrals",
+    "stream": "pur_inbound",
     "metadata": [
       {
         "breadcrumb": [],
         "metadata": {
           "table-key-properties": [
-            "shopify_order_number"
+            "id",
+            "billno"
           ],
           "forced-replication-method": "INCREMENTAL",
           "valid-replication-keys": [
-            "referral_timestamp"
+            "modifytime"
           ],
-          "inclusion": "available",
+          "inclusion": "available", 
           "selected": true
         }
       },
-      ...
+    ...
     ]
     ...
     ```
 5. Use following command to sync all orders with order items, buyer info and shipping address (when available).
 ```bash
-tap-referralcandy -c config.json --catalog catalog.json > output.txt
+tap-kingdee-jdy -c config.json --catalog catalog.json > output.txt
 ```
 
 ---
