@@ -84,7 +84,7 @@ class Base:
                 resp = requests.post(url=f"{BASE_URL}{self.specific_api}_list",
                     headers=headers, params=params,
                     json={"pagesize": 100, "page": page, "begindate": start.strftime("%Y-%m-%d")})
-                LOGGER.info(f"status_code: {resp.status_code}")
+                LOGGER.info(f"{self.specific_api}_list status_code: {resp.status_code}")
                 if resp.status_code == 200:
                     resp = resp.json()
                     if resp["success"] == True:
@@ -111,6 +111,7 @@ class Base:
         resp = requests.post(url=f"{BASE_URL}{self.specific_api}_detail",
             headers=headers, params=params, 
             json={"id": id})
+        LOGGER.info(f"{self.specific_api}_detail status_code: {resp.status_code}")
         if resp.status_code == 200:
             resp = resp.json()
             if resp["success"] == True:
