@@ -3,13 +3,13 @@
   "properties": {
     "accountId": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "srccurrency_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -117,13 +117,13 @@
     },
     "id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "orderbillid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -170,7 +170,7 @@
           },
           "srcentryid": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -248,7 +248,7 @@
           },
           "srcinterid": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -272,7 +272,7 @@
           },
           "id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -284,7 +284,7 @@
           },
           "srcbillcurrencyid_id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -341,13 +341,13 @@
     },
     "itemclass_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "creator_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -472,7 +472,7 @@
           },
           "settleaccount_id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -484,7 +484,7 @@
           },
           "id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -496,7 +496,7 @@
           },
           "paytype_id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -525,7 +525,7 @@
                 },
                 "id": {
                   "type": [
-                    "number",
+                    "integer",
                     "null"
                   ]
                 }
@@ -693,7 +693,7 @@
     },
     "currencyfor_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },

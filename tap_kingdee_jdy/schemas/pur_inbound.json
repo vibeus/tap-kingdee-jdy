@@ -3,13 +3,13 @@
   "properties": {
     "accountId": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "empid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -33,19 +33,19 @@
     },
     "creatorid_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "contact_city_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "dispatcher_district_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -63,7 +63,7 @@
     },
     "dispatcher_city_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -105,7 +105,7 @@
     },
     "contact_city_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -243,7 +243,7 @@
     },
     "dispatcher_country_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -375,7 +375,7 @@
     },
     "modifierid_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -453,7 +453,7 @@
     },
     "deptid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -483,7 +483,7 @@
     },
     "supplierid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -579,7 +579,7 @@
     },
     "creatorid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -609,7 +609,7 @@
     },
     "deptid_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -729,7 +729,7 @@
     },
     "contact_country_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -1632,7 +1632,7 @@
           },
           "stockid_id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -2064,7 +2064,7 @@
           },
           "materialid_id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           }
@@ -2193,7 +2193,7 @@
     },
     "contact_province_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2271,7 +2271,7 @@
     },
     "modifierid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2283,7 +2283,7 @@
     },
     "auditorid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2301,7 +2301,7 @@
     },
     "dispatcher_province_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2361,7 +2361,7 @@
     },
     "contact_district_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2559,7 +2559,7 @@
     },
     "currencyid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2571,7 +2571,7 @@
     },
     "empid_enable": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2589,7 +2589,7 @@
     },
     "auditorid_masterid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     }
