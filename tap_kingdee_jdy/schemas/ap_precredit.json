@@ -741,7 +741,7 @@
     },
     "modifier_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -753,19 +753,19 @@
     },
     "dept_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "currency_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
     "servicefeebillid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -777,7 +777,7 @@
     },
     "emp_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     }

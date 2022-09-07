@@ -327,7 +327,7 @@
     },
     "contact_province_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -435,7 +435,7 @@
     },
     "dispatcher_district_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -701,7 +701,7 @@
     },
     "dispatcher_country_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -713,7 +713,7 @@
     },
     "id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -790,7 +790,7 @@
           },
           "srcentryid": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -838,7 +838,7 @@
           },
           "id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -886,7 +886,7 @@
           },
           "baseunit_id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -927,7 +927,7 @@
                 },
                 "id": {
                   "type": [
-                    "number",
+                    "integer",
                     "null"
                   ]
                 }
@@ -1122,7 +1122,7 @@
           },
           "unit_id": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -1602,7 +1602,7 @@
           },
           "srcinterid": {
             "type": [
-              "number",
+              "integer",
               "null"
             ]
           },
@@ -1821,7 +1821,7 @@
     },
     "dispatcher_province_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -1965,7 +1965,7 @@
     },
     "basecurrency_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -1983,7 +1983,7 @@
     },
     "modifierid_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2037,7 +2037,7 @@
     },
     "contact_country_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2205,7 +2205,7 @@
     },
     "settingterm_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2217,7 +2217,7 @@
     },
     "contact_district_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2229,7 +2229,7 @@
     },
     "dispatcher_city_id": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
@@ -2277,7 +2277,7 @@
     },
     "ap_prepay_billid": {
       "type": [
-        "number",
+        "integer",
         "null"
       ]
     },
