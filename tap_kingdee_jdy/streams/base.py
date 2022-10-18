@@ -11,6 +11,7 @@ from requests.exceptions import RequestException, HTTPError
 
 LOGGER = singer.get_logger()
 DEFAULT_BACKOFF_SECONDS = 60
+MAX_TRIES = 10
 
 BASE_URL = "http://api.kingdee.com/jdy"
 
@@ -88,6 +89,8 @@ class Base:
                     json={"pagesize": 100, "page": page})
                     # json={"pagesize": 100, "page": page, "begindate": start.strftime("%Y-%m-%d")})
                 LOGGER.info(f"{self.specific_api}_list status_code: {resp.status_code}")
+                if resp.status_code == 519:
+                    break
                 if resp.status_code == 200:
                     resp = resp.json()
                     if resp["success"] == True:
