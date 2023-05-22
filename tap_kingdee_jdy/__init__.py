@@ -130,7 +130,6 @@ def get_access_token(client_id, client_secret, account):
     headers = get_full_headers(client_id, client_secret, 'GET', GET_AUTH_TOKEN, params)
     resp = requests.request('GET', HOST+GET_AUTH_TOKEN, headers=headers, params=params).json()
     if 'data' in resp and resp['data']:
-        print(resp['data'])
         app_token = resp['data']['app-token']
         access_token = resp['data']['access_token']
     return app_token, access_token, domain
@@ -175,8 +174,6 @@ def sync(config, state, catalog):
     """Sync data from tap source"""
 
     state_dict = {}
-
-    LOGGER.info(f"config: {config}")
 
     for catalog_stream in catalog.get_selected_streams(state):
         stream_id = catalog_stream.tap_stream_id
