@@ -9,10 +9,24 @@ from singer.catalog import Catalog, CatalogEntry
 from singer.schema import Schema
 from tap_kingdee_jdy.streams import create_stream
 
+import hmac
+import base64
+import hashlib
 
-REQUIRED_CONFIG_KEYS = ["start_date", "access_token"]
+import time
+from copy import copy
+from datetime import datetime
+from urllib.parse import quote, quote_plus
+
+
+REQUIRED_CONFIG_KEYS = ["start_date", "groupName", "client_id", "client_secret", "accounts"]
 LOGGER = singer.get_logger()
+
 BASE_URL = "http://api.kingdee.com/jdy"
+HOST= "https://api.kingdee.com"
+GET_APP_AUTH = "/jdyconnector/app_management/push_app_authorize"
+GET_AUTH_TOKEN = "/jdyconnector/app_management/kingdee_auth_token"
+
 
 def expand_env(config):
     assert isinstance(config, dict)
@@ -54,6 +68,82 @@ def load_schemas():
             schemas[file_raw] = Schema.from_dict(json.load(file))
     return schemas
 
+def get_timestamp():
+    time_value = time.time()
+    second, millisecond = str(time_value).split('.')
+    return f'{second}{millisecond[:3]}'
+
+def format_headers_key(header_key):
+    split_list = header_key.split('-')
+    return '-'.join([i.capitalize() for i in split_list])
+
+def gen_signature(secret, data):
+    signature_hex = hmac.new(key=secret.encode('utf-8'),
+                             msg=data.encode('utf-8'),
+                             digestmod=hashlib.sha256).hexdigest()
+    signature_hex_base64 = base64.b64encode(signature_hex.encode('utf-8'))
+    signature_result = signature_hex_base64.decode('utf-8')
+    return signature_result
+
+def format_signature_string(method, path, params=None, headers=None, **kwargs):
+    upper_method = method.upper()
+    quote_path = quote_plus(path)
+    params_string = '&'.join([f'{k}={quote(quote(v))}' for k, v in params.items()]) if params else ''
+    copy_headers = {k.lower(): v for k, v in copy(headers).items()}
+    signature_headers = {
+        'X-Api-Nonce': copy_headers['x-api-nonce'],
+        'X-Api-TimeStamp': copy_headers['x-api-timestamp']
+    }
+    signature_headers_string = '\n'.join([f'{k.lower()}:{v}' for k, v in signature_headers.items()])
+    signature_data_list = [upper_method, quote_path, params_string, signature_headers_string]
+    signature_text_result = '\n'.join(signature_data_list)
+    return signature_text_result + '\n'
+
+def get_full_headers(client_id, client_secret, method, path, params, headers={}):
+    signature_headers = {'x-api-nonce': "2530", 'x-api-timestamp': get_timestamp()}
+    full_headers = {k.lower(): v for k, v in copy(headers).items()}
+    full_headers.update(signature_headers)
+    signature_text = format_signature_string(method=method, path=path, params=params, headers=signature_headers)
+    signature_value = gen_signature(client_secret, signature_text)
+    full_headers.update({
+        'X-Api-Signature': signature_value,
+        'X-Api-Auth-Version': '2.0',
+        'X-Api-ClientID': client_id,
+        'X-Api-SignHeaders': 'X-Api-Nonce,X-Api-TimeStamp',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54'
+    })
+    return {format_headers_key(k): v for k, v in full_headers.items()}
+
+def get_app_secret(client_id, client_secret, outer_instance_id):
+    app_secret, domain = '', ''
+    params = {"outerInstanceId": outer_instance_id}
+    headers = get_full_headers(client_id, client_secret, 'POST', GET_APP_AUTH, params)
+    resp = requests.request('POST', HOST+GET_APP_AUTH, headers=headers, params=params).json()
+    if 'data' in resp and resp['data']:
+        app_secret = resp['data'][0]['appSecret']
+        domain = resp['data'][0]['domain']
+    return app_secret, domain
+
+def get_access_token(client_id, client_secret, account):
+    app_secret, domain = get_app_secret(client_id, client_secret, account['outer_instance_id'])
+    params = {"app_key": account['app_key'], "app_signature": gen_signature(app_secret, account['app_key'])}
+    headers = get_full_headers(client_id, client_secret, 'GET', GET_AUTH_TOKEN, params)
+    resp = requests.request('GET', HOST+GET_AUTH_TOKEN, headers=headers, params=params).json()
+    if 'data' in resp and resp['data']:
+        print(resp['data'])
+        app_token = resp['data']['app-token']
+        access_token = resp['data']['access_token']
+    return app_token, access_token
+
+def update_config(config):
+    new_accounts = []
+    for account in config["accounts"]:
+        app_token, access_token = get_access_token(config['client_id'], config['client_secret'], account)
+        account['app_token'] = app_token
+        account['access_token'] = access_token
+        new_accounts.append(account)
+    config["accounts"] = new_accounts
+    return config
 
 def discover():
     raw_schemas = load_schemas()
@@ -79,11 +169,10 @@ def discover():
         )
     return Catalog(streams)
 
-
 def sync(config, state, catalog):
 
     """Sync data from tap source"""
-    
+
     state_dict = {}
 
     for catalog_stream in catalog.get_selected_streams(state):
@@ -127,8 +216,8 @@ def main():
             catalog = discover()
 
         args.config = expand_env(args.config)
-        sync(args.config, args.state, catalog)
-
+        updated_config = update_config(args.config)
+        sync(updated_config, args.state, catalog)
 
 if __name__ == "__main__":
     main()

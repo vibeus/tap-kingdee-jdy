@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from dateutil.parser import parse
 
 import requests
-from requests.exceptions import RequestException, HTTPError 
+from requests.exceptions import RequestException, HTTPError
 
 LOGGER = singer.get_logger()
 DEFAULT_BACKOFF_SECONDS = 60
@@ -40,10 +40,10 @@ class Base:
     @property
     def state(self):
         return self._state
-    
+
     @property
     def specific_api(self):
-        return "/"
+        return "/jdy"
 
 
     def get_metadata(self, schema):
@@ -63,25 +63,25 @@ class Base:
             "groupName": config["groupName"],
             # "accountId": config["accountId"],
         }
-        params = {"access_token": config["access_token"]}
 
         # today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
         # self._start_date = config.get("start_date", today) # config start date
         self._backoff_seconds = config.get("rate_limit_backoff_seconds", DEFAULT_BACKOFF_SECONDS)
         # self._state = state.copy()
 
-        for accountId in config["accountIds"]:
+        for account in config["accounts"]:
             headers = base_headers.copy()
-            headers["accountId"] = accountId
+            headers["accountId"] = account['account_id']
+            params = {"access_token": account["access_token"]}
             yield from self.get_account_data(headers, params)
-    
+
     def get_account_data(self, headers, params):
         # state_date = self._state.get(headers['accountId'], self._start_date) # state start date
         # start = max(parse(self._start_date), parse(state_date))
         # max_rep_key = start
         # LOGGER.info(f"start from {start.isoformat()} for account {headers['accountId']}")
         LOGGER.info(f"start for account {headers['accountId']}")
-        page = 1 
+        page = 1
         while True:
             try:
                 resp = requests.post(url=f"{BASE_URL}{self.specific_api}_list",
@@ -104,9 +104,9 @@ class Base:
                                 # if rep_key and parse(rep_key) > max_rep_key:
                                 #     max_rep_key = parse(rep_key)
                                 yield data
-                
+
                 page += 1
-            
+
             except RequestException as e:
                 LOGGER.warning(f"{e} Waiting {self._backoff_seconds} seconds...")
                 time.sleep(self._backoff_seconds)
@@ -115,7 +115,7 @@ class Base:
 
     def get_detail_data(self, id, headers, params):
         resp = requests.post(url=f"{BASE_URL}{self.specific_api}_detail",
-            headers=headers, params=params, 
+            headers=headers, params=params,
             json={"id": id})
         LOGGER.info(f"{self.specific_api}_detail status_code: {resp.status_code}")
         if resp.status_code == 200:
