@@ -133,14 +133,15 @@ def get_access_token(client_id, client_secret, account):
         print(resp['data'])
         app_token = resp['data']['app-token']
         access_token = resp['data']['access_token']
-    return app_token, access_token
+    return app_token, access_token, domain
 
 def update_config(config):
     new_accounts = []
     for account in config["accounts"]:
-        app_token, access_token = get_access_token(config['client_id'], config['client_secret'], account)
+        app_token, access_token, domain = get_access_token(config['client_id'], config['client_secret'], account)
         account['app_token'] = app_token
         account['access_token'] = access_token
+        account['domain'] = domain
         new_accounts.append(account)
     config["accounts"] = new_accounts
     return config
@@ -174,6 +175,8 @@ def sync(config, state, catalog):
     """Sync data from tap source"""
 
     state_dict = {}
+
+    LOGGER.info(f"config: {config}")
 
     for catalog_stream in catalog.get_selected_streams(state):
         stream_id = catalog_stream.tap_stream_id
