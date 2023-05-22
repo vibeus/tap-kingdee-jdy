@@ -64,10 +64,10 @@ class Base:
             # "accountId": config["accountId"],
         }
 
-        # today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
-        # self._start_date = config.get("start_date", today) # config start date
+        today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
+        self._start_date = config.get("start_date", today) # config start date
         self._backoff_seconds = config.get("rate_limit_backoff_seconds", DEFAULT_BACKOFF_SECONDS)
-        # self._state = state.copy()
+        self._state = state.copy()
 
         for account in config["accounts"]:
             headers = base_headers.copy()
@@ -76,9 +76,9 @@ class Base:
             yield from self.get_account_data(headers, params)
 
     def get_account_data(self, headers, params):
-        # state_date = self._state.get(headers['accountId'], self._start_date) # state start date
-        # start = max(parse(self._start_date), parse(state_date))
-        # max_rep_key = start
+        state_date = self._state.get(headers['accountId'], self._start_date) # state start date
+        start = max(parse(self._start_date), parse(state_date))
+        max_rep_key = start
         # LOGGER.info(f"start from {start.isoformat()} for account {headers['accountId']}")
         LOGGER.info(f"start for account {headers['accountId']}")
         page = 1
@@ -100,9 +100,9 @@ class Base:
                             data = self.get_detail_data(row["id"], headers, params)
                             if data:
                                 data["accountId"] = headers["accountId"]
-                                # rep_key = data.get(self.replication_key)
-                                # if rep_key and parse(rep_key) > max_rep_key:
-                                #     max_rep_key = parse(rep_key)
+                                rep_key = data.get(self.replication_key)
+                                if rep_key and parse(rep_key) > max_rep_key:
+                                    max_rep_key = parse(rep_key)
                                 yield data
 
                 page += 1
@@ -111,7 +111,7 @@ class Base:
                 LOGGER.warning(f"{e} Waiting {self._backoff_seconds} seconds...")
                 time.sleep(self._backoff_seconds)
 
-        # self._state[headers['accountId']] = max_rep_key.isoformat()
+        self._state[headers['accountId']] = max_rep_key.isoformat()
 
     def get_detail_data(self, id, headers, params):
         resp = requests.post(url=f"{BASE_URL}{self.specific_api}_detail",
