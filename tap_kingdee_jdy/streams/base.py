@@ -34,8 +34,8 @@ class Base:
 
     @property
     def replication_method(self):
-        return "FULL_TABLE"
-        # return "INCREMENTAL"
+        # return "FULL_TABLE"
+        return "INCREMENTAL"
 
     @property
     def state(self):
@@ -61,7 +61,6 @@ class Base:
             "Content-Type": "application/json",
             "charset": "utf-8",
             "groupName": config["groupName"],
-            # "accountId": config["accountId"],
         }
 
         today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
@@ -80,14 +79,20 @@ class Base:
         start = max(parse(self._start_date), parse(state_date))
         max_rep_key = start
         # LOGGER.info(f"start from {start.isoformat()} for account {headers['accountId']}")
-        LOGGER.info(f"start for account {headers['accountId']}")
+        # LOGGER.info(f"start for account {headers['accountId']}")
         page = 1
+        body = {"pagesize": 100, "begindate": start.strftime("%Y-%m-%d")}
+        if datetime.utcnow().day == 1:
+            body.pop("begindate")
+            LOGGER.info("Full-refreshing the Table!")
+            LOGGER.info(f"start for account {headers['accountId']}")
+        else:
+            LOGGER.info(f"start from {start.isoformat()} for account {headers['accountId']}")
         while True:
             try:
+                body.update({"page": page})
                 resp = requests.post(url=f"{BASE_URL}{self.specific_api}_list",
-                    headers=headers, params=params,
-                    json={"pagesize": 100, "page": page})
-                    # json={"pagesize": 100, "page": page, "begindate": start.strftime("%Y-%m-%d")})
+                    headers=headers, params=params, json=body)
                 LOGGER.info(f"{self.specific_api}_list status_code: {resp.status_code}")
                 if resp.status_code == 519:
                     break
