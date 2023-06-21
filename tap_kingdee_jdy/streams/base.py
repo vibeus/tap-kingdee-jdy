@@ -60,7 +60,6 @@ class Base:
         base_headers = {
             "Content-Type": "application/json",
             "charset": "utf-8",
-            "groupName": config["groupName"],
         }
 
         today = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
@@ -71,6 +70,7 @@ class Base:
         for account in config["accounts"]:
             headers = base_headers.copy()
             headers["accountId"] = account['account_id']
+            headers["groupName"] = account['group_name']
             params = {"access_token": account["access_token"]}
             yield from self.get_account_data(headers, params)
 
@@ -78,16 +78,13 @@ class Base:
         state_date = self._state.get(headers['accountId'], self._start_date) # state start date
         start = max(parse(self._start_date), parse(state_date))
         max_rep_key = start
-        # LOGGER.info(f"start from {start.isoformat()} for account {headers['accountId']}")
-        # LOGGER.info(f"start for account {headers['accountId']}")
+        # lookback 95 days on every Thursday
+        # if datetime.utcnow().weekday() == 3:
+        #     start = min(start, datetime.utcnow() - timedelta(days=95))
         page = 1
         body = {"pagesize": 100, "begindate": start.strftime("%Y-%m-%d")}
-        if datetime.utcnow().day == 1:
-            body.pop("begindate")
-            LOGGER.info("Full-refreshing the Table!")
-            LOGGER.info(f"start for account {headers['accountId']}")
-        else:
-            LOGGER.info(f"start from {start.isoformat()} for account {headers['accountId']}")
+        LOGGER.info(f"start from {start.isoformat()} for account {headers['accountId']}")
+
         while True:
             try:
                 body.update({"page": page})
@@ -98,7 +95,7 @@ class Base:
                     break
                 if resp.status_code == 200:
                     resp = resp.json()
-                    if resp["success"] == True:
+                    if "success" in resp and resp["success"] == True:
                         if len(resp["data"]["rows"]) == 0:
                             break
                         for row in resp["data"]["rows"]:
@@ -109,6 +106,8 @@ class Base:
                                 if rep_key and parse(rep_key) > max_rep_key:
                                     max_rep_key = parse(rep_key)
                                 yield data
+                    else:
+                        LOGGER.warning(f"{resp}")
 
                 page += 1
 
@@ -125,5 +124,7 @@ class Base:
         LOGGER.info(f"{self.specific_api}_detail status_code: {resp.status_code}")
         if resp.status_code == 200:
             resp = resp.json()
-            if resp["success"] == True:
+            if "success" in resp and resp["success"] == True:
                 return resp["data"]
+            else:
+                LOGGER.warning(f"{resp}")

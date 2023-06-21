@@ -19,7 +19,7 @@ from datetime import datetime
 from urllib.parse import quote, quote_plus
 
 
-REQUIRED_CONFIG_KEYS = ["start_date", "groupName", "client_id", "client_secret", "accounts"]
+REQUIRED_CONFIG_KEYS = ["start_date", "client_id", "client_secret", "accounts"]
 LOGGER = singer.get_logger()
 
 BASE_URL = "http://api.kingdee.com/jdy"
@@ -115,34 +115,38 @@ def get_full_headers(client_id, client_secret, method, path, params, headers={})
     return {format_headers_key(k): v for k, v in full_headers.items()}
 
 def get_app_secret(client_id, client_secret, outer_instance_id):
-    app_secret, domain = '', ''
+    app_secret, domain, group_name = '', '', ''
     params = {"outerInstanceId": outer_instance_id}
     headers = get_full_headers(client_id, client_secret, 'POST', GET_APP_AUTH, params)
     resp = requests.request('POST', HOST+GET_APP_AUTH, headers=headers, params=params).json()
     if 'data' in resp and resp['data']:
         app_secret = resp['data'][0]['appSecret']
         domain = resp['data'][0]['domain']
-    return app_secret, domain
+        group_name = resp['data'][0]['groupName']
+    return app_secret, domain, group_name
 
 def get_access_token(client_id, client_secret, account):
-    app_secret, domain = get_app_secret(client_id, client_secret, account['outer_instance_id'])
+    app_secret, domain, group_name = get_app_secret(client_id, client_secret, account['outer_instance_id'])
     params = {"app_key": account['app_key'], "app_signature": gen_signature(app_secret, account['app_key'])}
     headers = get_full_headers(client_id, client_secret, 'GET', GET_AUTH_TOKEN, params)
     resp = requests.request('GET', HOST+GET_AUTH_TOKEN, headers=headers, params=params).json()
+    app_token, access_token = '', ''
     if 'data' in resp and resp['data']:
         app_token = resp['data']['app-token']
         access_token = resp['data']['access_token']
-    return app_token, access_token, domain
+    return app_token, access_token, domain, group_name
 
 def update_config(config):
     new_accounts = []
     for account in config["accounts"]:
-        app_token, access_token, domain = get_access_token(config['client_id'], config['client_secret'], account)
+        app_token, access_token, domain, group_name = get_access_token(config['client_id'], config['client_secret'], account)
         account['app_token'] = app_token
         account['access_token'] = access_token
         account['domain'] = domain
+        account['group_name'] = group_name
         new_accounts.append(account)
     config["accounts"] = new_accounts
+    LOGGER.warning(f"{config}")
     return config
 
 def discover():
