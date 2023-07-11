@@ -26,7 +26,7 @@ class Base:
 
     @property
     def key_properties(self):
-        return ["accountId", "id", "billno"]
+        return ["accountId", "id"]
 
     @property
     def replication_key(self):
