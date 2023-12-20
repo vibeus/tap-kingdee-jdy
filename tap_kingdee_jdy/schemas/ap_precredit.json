@@ -395,7 +395,7 @@
     },
     "billsource": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },
@@ -591,7 +591,7 @@
     },
     "emp_number": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },

@@ -1,0 +1,125 @@
+{
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "modifier_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createtime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "creator_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifytime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "level": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "longnumber": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isimport": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pinyin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifier_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "creator_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "creator_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "fullname": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fullpinyin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isleaf": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "modifier_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -621,7 +621,7 @@
     },
     "emp_number": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },

@@ -1,0 +1,1261 @@
+{
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "sendstatus": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "auxunitid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isautosplit": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isfloat": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isfeedautoint": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "duedatetype": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "standardcurrencyid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifierfield_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "baseunitid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qtyinv": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "modifierfield_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "enable": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "auxtype5": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "purleadtime": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "auxtype4": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "secinventoryqty": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleunitid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "images": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "createrfield_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "isselfrestraint": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "computationrule": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "disabledate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "purchaseunitid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ischangeduedatetype": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "issubpart": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "mullabel": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "priceentity": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "properties": {
+          "nearpurpricebilldate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_minsaltaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_purchaseprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_distributionprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearsupplier_group_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_minpurprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearsupplier_salerid_number": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearpurcostcreatetime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_maxpurchaseprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearsalpricebilldate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_nearsupplier_salerid_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearpurtaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearsupplier_group_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_minsalprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "price_nearsupplier_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_minpurtaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_costprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearpurpriceseq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearsupplier_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_minsalesprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_outsourceprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice10": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearsalcostaudittime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_saleprice1": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice2": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice3": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice8": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearsalprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice9": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice4": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearpurcostseq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice5": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice6": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_saleprice7": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_tradeprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_barcode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "nearsalpriceaudittime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_vipprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_unitid_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearsupplier_group_id": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearpurpricecreatetime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "nearpurcostbilldate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "nearsalpricecreatetime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_maxpurtaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_retailprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearsalcostbilldate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_nearsupplier_salerid_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "nearpurpriceaudittime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "seq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_maxpurprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_unitid_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_unitid_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_skuid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearpurunitcost": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_maxsalprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearsalcostcreatetime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_nearsalunitcost": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_nearsaltaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_maxsaltaxprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearsalcostseq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearpurcostaudittime": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_nearsupplier_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_nearpurprice": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "nearsalpriceseq": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "leadtime": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "fullpinyin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "auxunitid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createtime1": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "kfperiodtype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "saleprice8": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice9": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice6": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice7": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice4": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice5": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice2": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice3": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "inv_mgr_type": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "isserial": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "standardcurrencyid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "sharetimes": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "saleprice1": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "helpcode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "iskeypieces": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isbackflushed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "kfperiod": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "outmaterialid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ismulti_unit": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "createtime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lastauxtype": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isbatchcost": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "entrust": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isbatch": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "outsourceprice": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "stockup_day": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "producunitid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "barcoderemark": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "refistrationnumber": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "saleprice10": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "parent_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "minorderqty": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "fixunitcount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "mininventoryqty": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "baseunitid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "isinvauxset": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isassembly": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "net_weight": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "txtbarcode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storeunitid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checktype": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "high": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "modifytime1": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "distributionprice": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "invoicename": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attachments_url": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "producingpace": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "purchaseunitid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "iskfperiod": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "gross_weight": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "barcode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "taxrate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "custom_field__data": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "store_entity": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "barcodeentity": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "producunitid_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "saleunitid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "producunitid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "volume": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "createrfield_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pinyin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_id": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "standardcurrencyid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sharedate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storeunitid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isweight": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isoutsource": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "costmethod": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "baseunitid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "saleunitid_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isauxcost": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "modifytime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "auxentity": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "issale": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "isasstattr": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "multicount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "remark": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createrfield_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storeunitid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "purchaseunitid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "parent_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "auxunitid_id": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "alarmday": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bomentity": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "prolicense": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modifierfield_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "wide": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "attachmentcountfield": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "maxinventoryqty": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "length": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ispurchase": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "bomprice": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "istaxfree": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "conversionrate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bindsupplier": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isshowauxbarcode": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    }
+  }
+}

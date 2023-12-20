@@ -645,7 +645,7 @@
     },
     "auditorid_phone": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },
@@ -749,7 +749,7 @@
     },
     "creatorid_phone": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },
@@ -1803,7 +1803,7 @@
     },
     "dispatcher_phone": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },
@@ -1875,7 +1875,7 @@
     },
     "empid_number": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },
@@ -2067,7 +2067,7 @@
     },
     "contact_phone": {
       "type": [
-        "number",
+        "string",
         "null"
       ]
     },
