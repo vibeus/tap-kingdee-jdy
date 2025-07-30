@@ -248,7 +248,7 @@
           },
           "price_nearsupplier_salerid_number": {
             "type": [
-              "number",
+              "string",
               "null"
             ]
           },
